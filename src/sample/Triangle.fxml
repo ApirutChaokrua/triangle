@@ -5,8 +5,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
    <children>
       <Label layoutX="147.0" layoutY="47.0" text="Enter the length of sides">
          <font>
@@ -18,12 +17,12 @@
             <Font size="24.0" />
          </font>
       </Label>
-      <TextField fx:id="inputSide1" layoutX="233.0" layoutY="109.0" prefHeight="51.0" prefWidth="236.0">
+      <TextField fx:id="inputSide1" layoutX="233.0" layoutY="109.0" onAction="#side1Handler" prefHeight="51.0" prefWidth="236.0">
          <font>
             <Font size="24.0" />
          </font>
       </TextField>
-      <Label fx:id="Result" layoutX="233.0" layoutY="298.0" text="Answer">
+      <Label fx:id="Result" alignment="TOP_LEFT" layoutX="233.0" layoutY="298.0" prefHeight="90.0" prefWidth="236.0" text="-">
          <font>
             <Font size="24.0" />
          </font>
@@ -43,12 +42,12 @@
             <Font size="24.0" />
          </font>
       </Label>
-      <TextField fx:id="inputSide3" layoutX="233.0" layoutY="231.0" prefHeight="51.0" prefWidth="236.0">
+      <TextField fx:id="inputSide3" disable="true" layoutX="233.0" layoutY="231.0" onAction="#side3Handler" prefHeight="51.0" prefWidth="236.0">
          <font>
             <Font size="24.0" />
          </font>
       </TextField>
-      <TextField fx:id="inputSide2" layoutX="233.0" layoutY="170.0" prefHeight="51.0" prefWidth="236.0">
+      <TextField fx:id="inputSide2" disable="true" layoutX="233.0" layoutY="170.0" onAction="#side2Handler" prefHeight="51.0" prefWidth="236.0">
          <font>
             <Font size="24.0" />
          </font>
